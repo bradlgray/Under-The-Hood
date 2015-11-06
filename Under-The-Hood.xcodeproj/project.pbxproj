@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8F6A2BC51BE9125600F0AC87 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6A2BC41BE9125600F0AC87 /* Post.swift */; };
 		8F6A2BC81BE9520700F0AC87 /* postCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6A2BC71BE9520700F0AC87 /* postCell.swift */; };
+		8F6A2BCB1BE9836200F0AC87 /* PostImgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6A2BCA1BE9836200F0AC87 /* PostImgVC.swift */; };
+		8F6A2BCE1BEBD3A900F0AC87 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6A2BCD1BEBD3A900F0AC87 /* DataService.swift */; };
 		8FC3EE7D1BE462B10094C73B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3EE7C1BE462B10094C73B /* AppDelegate.swift */; };
 		8FC3EE7F1BE462B10094C73B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3EE7E1BE462B10094C73B /* ViewController.swift */; };
 		8FC3EE821BE462B10094C73B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC3EE801BE462B10094C73B /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		8F6A2BC41BE9125600F0AC87 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8F6A2BC71BE9520700F0AC87 /* postCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = postCell.swift; sourceTree = "<group>"; };
+		8F6A2BCA1BE9836200F0AC87 /* PostImgVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImgVC.swift; sourceTree = "<group>"; };
+		8F6A2BCD1BEBD3A900F0AC87 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		8FC3EE791BE462B10094C73B /* Under-The-Hood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Under-The-Hood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC3EE7C1BE462B10094C73B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FC3EE7E1BE462B10094C73B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,9 +54,28 @@
 		8F6A2BC61BE951BA00F0AC87 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8FC3EE851BE462B10094C73B /* LaunchScreen.storyboard */,
+				8FC3EE801BE462B10094C73B /* Main.storyboard */,
 				8F6A2BC71BE9520700F0AC87 /* postCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		8F6A2BC91BE95E2800F0AC87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8FC3EE7E1BE462B10094C73B /* ViewController.swift */,
+				8F6A2BCA1BE9836200F0AC87 /* PostImgVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8F6A2BCC1BEBD38B00F0AC87 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8F6A2BCD1BEBD3A900F0AC87 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		8FC3EE701BE462B10094C73B = {
@@ -74,13 +97,12 @@
 		8FC3EE7B1BE462B10094C73B /* Under-The-Hood */ = {
 			isa = PBXGroup;
 			children = (
+				8F6A2BCC1BEBD38B00F0AC87 /* Services */,
 				8F6A2BC31BE911EE00F0AC87 /* Model */,
 				8F6A2BC61BE951BA00F0AC87 /* View */,
-				8FC3EE7C1BE462B10094C73B /* AppDelegate.swift */,
-				8FC3EE7E1BE462B10094C73B /* ViewController.swift */,
-				8FC3EE801BE462B10094C73B /* Main.storyboard */,
+				8F6A2BC91BE95E2800F0AC87 /* Controller */,
 				8FC3EE831BE462B10094C73B /* Assets.xcassets */,
-				8FC3EE851BE462B10094C73B /* LaunchScreen.storyboard */,
+				8FC3EE7C1BE462B10094C73B /* AppDelegate.swift */,
 				8FC3EE881BE462B10094C73B /* Info.plist */,
 			);
 			path = "Under-The-Hood";
@@ -159,6 +181,8 @@
 			files = (
 				8F6A2BC51BE9125600F0AC87 /* Post.swift in Sources */,
 				8FC3EE7F1BE462B10094C73B /* ViewController.swift in Sources */,
+				8F6A2BCB1BE9836200F0AC87 /* PostImgVC.swift in Sources */,
+				8F6A2BCE1BEBD3A900F0AC87 /* DataService.swift in Sources */,
 				8FC3EE7D1BE462B10094C73B /* AppDelegate.swift in Sources */,
 				8F6A2BC81BE9520700F0AC87 /* postCell.swift in Sources */,
 			);
