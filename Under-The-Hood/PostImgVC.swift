@@ -38,8 +38,11 @@ class PostImgVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
    
     @IBAction func makePostTouched(sender: UIButton) {
         if let title = titleField.text, let desc = descField.text, let img = Image.image {
-            
+            let post = Post(imagepath: "", title: title, postDescription: desc)
+            DataService.instance.addPost(post)
         }
+        
+        NSNotificationCenter.defaultCenter().addObserver(<#T##observer: AnyObject##AnyObject#>, selector: <#T##Selector#>, name: <#T##String?#>, object: <#T##AnyObject?#>)
     }
    
     @IBAction func cancelTouched(sender: AnyObject) {
