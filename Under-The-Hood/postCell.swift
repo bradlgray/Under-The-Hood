@@ -23,6 +23,7 @@ class postCell: UITableViewCell {
     func configureCell(post: Post) {
         postTitle?.text = post.title
         postDesc?.text = post.postDescription
+        postImg?.image = DataService.instance.retrieveImageForpath(post.imagePath)
        
     }
    

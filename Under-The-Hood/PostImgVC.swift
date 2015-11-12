@@ -29,6 +29,9 @@ class PostImgVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         
         Image.layer.cornerRadius = Image.frame.size.width / 2
         Image.clipsToBounds = true
+        
+        
+        
            }
 
     @IBAction func addImgTouched(sender: UIButton) {
@@ -38,12 +41,15 @@ class PostImgVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
    
     @IBAction func makePostTouched(sender: UIButton) {
         if let title = titleField.text, let desc = descField.text, let img = Image.image {
-            let post = Post(imagepath: "", title: title, postDescription: desc)
+            let imgPath = DataService.instance.saveAndCreateUrlPath(img)
+            
+            let post = Post(imagepath: imgPath, title: title, postDescription: desc)
             DataService.instance.addPost(post)
+            dismissViewControllerAnimated(true, completion: nil)
+            
         }
         
-        NSNotificationCenter.defaultCenter().addObserver(<#T##observer: AnyObject##AnyObject#>, selector: <#T##Selector#>, name: <#T##String?#>, object: <#T##AnyObject?#>)
-    }
+           }
    
     @IBAction func cancelTouched(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
